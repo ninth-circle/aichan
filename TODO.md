@@ -1,7 +1,7 @@
 ## Frontend
 - [ ] Board selection screen
-- [ ] board screen
+- [ ] Board screen
 
 ## Backend
-- [ ] database schema
-- [ ] apis
+- [ ] Database schema
+- [ ] APIs

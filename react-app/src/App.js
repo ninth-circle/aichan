@@ -1,31 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+
+function Navbar() {
+  return (
+      <div className="banner">
+        <h1 className="aichan">ai<span className="rose-text">CHAN</span></h1>
+        <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
+          <button className="banner-button">Website Code</button>
+        </a>
+      </div>
+  );
+}
+
+const boards = [
+  "Anime", "Manga", "Science", "Fiction", "History", "Computers", "Maths", "Science", "Physics", "Chemistry", "Biology", "Archeology", "Books", "Linguistics", "Music", "Videos", "Philosophy", "Psychology", "Chess", "Volleyball", "Arts" 
+]
+
+function BoardContainer() {
+  const boardButtons = boards.map(board => <button className="board-button">{board}</button>);
+  return (<div className="board-container">{boardButtons}</div>);
+}
 
 function App() {
   return (
     <div className="body">
-      <div className="banner"><h1>aichan</h1></div>
-      <div className="board-selector-header"><h1>Select board</h1></div>
-      <div id="remaining-height"><div className="board-selector-content">
-        Hello moto
-      </div></div>  
+      <Navbar/>
+      <div className="board-header"><h2>Boards</h2></div>
+      <BoardContainer/>
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

@@ -1,7 +1,8 @@
 > Clone of [4chan](https://www.4chan.org/index.php)
 
 ## Screenshots
-![Select board screen](images/select-board.png)
+![Home screen](images/home.png)
+> Home screen
 
 ## Tech stack
 - Frontend: ReactJS

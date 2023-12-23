@@ -4,9 +4,14 @@ function Navbar() {
   return (
       <div className="banner">
         <h1 className="aichan">ai<span className="rose-text">CHAN</span></h1>
-        <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
-          <button className="banner-button">Website Code</button>
-        </a>
+        <div className="banner-buttons">    
+          <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
+            <button className="banner-button blue-background">Sign up</button>
+          </a>
+          <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
+            <button className="banner-button rose-background">Website Code</button>
+          </a>
+        </div>
       </div>
   );
 }
@@ -20,14 +25,11 @@ function BoardContainer() {
   return (<div className="board-container">{boardButtons}</div>);
 }
 
-function App() {
+export default function App() {
   return (
     <div className="body">
       <Navbar/>
-      <div className="board-header"><h2>Boards</h2></div>
       <BoardContainer/>
     </div>
   );
 }
-
-export default App;

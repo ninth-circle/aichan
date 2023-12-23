@@ -1,0 +1,38 @@
+@font-face {
+	font-family: "RobotoCondensed";
+	src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RobotoCondensed";
+	src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+.input-wrapper {
+  width: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #474E68;
+}
+
+input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-family: "RobotoCondensed";
+  font-size: 30px;
+  padding: 20px;
+  color: #B9B4C7;
+}
+
+::placeholder {
+  color: #616a8e;
+}
+
+input:focus {
+  outline: none;
+}

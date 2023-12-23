@@ -22,14 +22,22 @@
 .body {
   background-color: #35374a;
   height: 100vh;
-  width: 100%;
-  margin-top: -21px;
+  width: auto;
+  overflow: hidden;
 }
 
 .banner {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  position: absolute;
+  width: auto;
+  height: 70px;
   background-color: #404258;
   color: #77ccff;
 	font-family: 'FjallaOne';
+  align-items: center;
 }
 
 .banner-buttons {
@@ -51,7 +59,7 @@
 }
 
 .aichan {
-  padding: 15px;
+  margin-left: 20px;
 }
 
 .rose-background {
@@ -71,9 +79,9 @@
   border: none;
   font-family: 'RobotoCondensed';
   font-size: 20px;
+  margin: 5px;
   cursor: pointer;
-  border: 1px solid #6B728E;
-  color: #DDDDDD;
+  color: #B9B4C7;
   background-color: #474e68;
 }
 
@@ -82,5 +90,10 @@
   height: auto;
   margin-left: 30px;
   margin-right: 30px;
-  background-color: #474E68;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+.search-box-container {
+  margin-top: 90px;
 }

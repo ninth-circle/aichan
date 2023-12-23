@@ -1,18 +1,19 @@
 import './App.css';
+import {SearchBar} from './components/SearchBar.js'
 
 function Navbar() {
   return (
-      <div className="banner">
-        <h1 className="aichan">ai<span className="rose-text">CHAN</span></h1>
-        <div className="banner-buttons">    
-          <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
-            <button className="banner-button blue-background">Sign up</button>
-          </a>
-          <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
-            <button className="banner-button rose-background">Website Code</button>
-          </a>
-        </div>
+    <div className="banner">
+      <h1 className="aichan">ai<span className="rose-text">CHAN</span></h1>
+      <div className="banner-buttons">    
+        <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
+          <button className="banner-button blue-background">Sign up</button>
+        </a>
+        <a href="https://github.com/Ninth-Circle/aichan" target="_blank">
+          <button className="banner-button rose-background">Website Code</button>
+        </a>
       </div>
+    </div>
   );
 }
 
@@ -25,10 +26,17 @@ function BoardContainer() {
   return (<div className="board-container">{boardButtons}</div>);
 }
 
+function SearchBarContainer() {
+  return (
+    <div className="search-box-container"><SearchBar/></div>
+  );
+}
+
 export default function App() {
   return (
     <div className="body">
       <Navbar/>
+      <SearchBarContainer/>
       <BoardContainer/>
     </div>
   );
